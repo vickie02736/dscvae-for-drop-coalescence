@@ -51,7 +51,7 @@ We use max-min normlazation to rescale the raw dataset, and split it into three 
 We trains stardard CVAE, DSCVAE, LCVAE to generate efficient synthetic samples for predictive models. 
 
 ### Evaluating predictive models
-We trains two tree-based predictive models ``dscvae-for-drop-coalescence/Predictive_model``, random forest classifier and XGBoost classifier, to predict coalescence results. 
+We trains two tree-based predictive models ``dscvae-for-drop-coalescence/PredictiveModel``, random forest classifier and XGBoost classifier, to predict coalescence results. 
 
 ## Contact
 Kewei Zhu - kz1018@york.com<br>
