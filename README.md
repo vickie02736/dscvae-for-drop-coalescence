@@ -34,16 +34,25 @@ All datasets for this project are listed in: https://github.com/vickie02736/dscv
 *   Synthetic data generated from DSCVAE: ``dscvae-for-drop-coalescence/dataset/fake_dscvae.csv`` 
 *   Synthetic data generated from CVAE: ``dscvae-for-drop-coalescence/dataset/fake_cvae.csv`` 
 *   Synthetic data generated from LCVAE (for ablation): ``dscvae-for-drop-coalescence/dataset/fake_lcvae.csv`` 
+
 ## Implementation
-### Dataset splitting
+### Dataset processing
+We use max-min normlazation to rescale the raw dataset, and split it into three for training, validation and test repectively. 
 |                           |   Coalescence   | Non-coalescence | Total |
 | --------------------------| --------------- | ----------------| ------------- |
 | Total dataset             | 1162 | 369 | 1531  |
 | Training dataset          | 1012 | 219 | 1231 |
-| Balanced training dataset | 219 | 219 | 438 |
+| *Balanced training dataset* | 219 | 219 | 438 |
 | Validation dataset        | 50 | 50 | 100 |
 | Test dataset              | 100 | 100 | 200 |
+*Balanced training dataset balances two labels of training dataset. 
+
+### Generating synthetic data
+We trains stardard CVAE, DSCVAE, LCVAE to generate efficient synthetic samples for predictive models. 
+
+### Evaluating predictive models
+We trains two tree-based predictive models ``dscvae-for-drop-coalescence/Predictive_model``, random forest classifier and XGBoost classifier, to predict coalescence results. 
 
 ## Contact
-Kewei Zhu - kz1018@york.com
-Sibo Cheng - sibo.cheng@imperial.ac.uk
+Kewei Zhu - kz1018@york.com<br>
+Sibo Cheng - sibo.cheng@imperial.ac.uk<br>
