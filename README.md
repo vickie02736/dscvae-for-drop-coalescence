@@ -27,13 +27,7 @@ Machine learning methods can be used to predict drop coalescence, which is the p
 
 ## Dataset 
 All datasets for this project are listed in: https://github.com/vickie02736/dscvae-for-drop-coalescence/tree/main/dataset 
-*   Raw dataset from chemical experiments: ``dscvae-for-drop-coalescence/dataset/Data0812.xlsx``
-*   Initial dataset for generative models and predictive models: ``dscvae-for-drop-coalescence/dataset/train_balanced.csv``
-*   Validation dataset for predictive models' hyperparameter tuning: ``dscvae-for-drop-coalescence/dataset/valid.csv``
-*   Test dataset for evaluating predictive models: ``dscvae-for-drop-coalescence/dataset/test.csv``
-*   Synthetic data generated from DSCVAE: ``dscvae-for-drop-coalescence/dataset/fake_dscvae.csv`` 
-*   Synthetic data generated from CVAE: ``dscvae-for-drop-coalescence/dataset/fake_cvae.csv`` 
-*   Synthetic data generated from LCVAE (for ablation): ``dscvae-for-drop-coalescence/dataset/fake_lcvae.csv`` 
+* the experimental data can be available upon reasonable request to Dr. Nina Kovalchuk
 
 ## Implementation
 ### Dataset processing
